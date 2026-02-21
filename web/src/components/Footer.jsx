@@ -12,6 +12,7 @@ export default function Footer() {
             The top rated All-In-One optimization tool
           </motion.h2>
 
+        
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20">
             <div className="flex flex-col items-center">

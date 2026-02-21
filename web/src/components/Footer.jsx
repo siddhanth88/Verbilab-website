@@ -69,9 +69,13 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-slate-900 mb-4">Follow Us</h3>
               <ul className="space-y-3">
-                {['Facebook', 'Twitter', 'Instagram'].map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-slate-600 hover:text-cyan-600 transition-colors text-sm">{link}</a>
+                {[
+                  { name: 'Facebook', url: 'https://facebook.com' },
+                  { name: 'Twitter', url: 'https://twitter.com' },
+                  { name: 'Instagram', url: 'https://instagram.com' },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <a href={item.url} className="text-slate-600 hover:text-cyan-600 transition-colors text-sm" target="_blank" rel="noopener noreferrer">{item.name}</a>
                   </li>
                 ))}
               </ul>
@@ -80,8 +84,12 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-slate-900 mb-4">Support</h3>
               <ul className="space-y-3">
-                {['FAQ', 'About Us', 'Contact Us'].map((link) => (
-                  <li key={link}><a href="#" className="text-slate-600 hover:text-cyan-600 transition-colors text-sm">{link}</a></li>
+                {[
+                  { name: 'FAQ', url: '/#faq' },
+                  { name: 'About Us', url: '/#about' },
+                  { name: 'Contact Us', url: '/#support' },
+                ].map((item) => (
+                  <li key={item.name}><a href={item.url} className="text-slate-600 hover:text-cyan-600 transition-colors text-sm">{item.name}</a></li>
                 ))}
               </ul>
             </div>
@@ -89,8 +97,12 @@ export default function Footer() {
             <div>
               <h3 className="font-semibold text-slate-900 mb-4">Policy</h3>
               <ul className="space-y-3">
-                {['Terms of Use', 'Privacy Policy', 'Refund Policy'].map((link) => (
-                  <li key={link}><a href="#" className="text-slate-600 hover:text-cyan-600 transition-colors text-sm">{link}</a></li>
+                {[
+                  { name: 'Terms of Use', url: '/terms' },
+                  { name: 'Privacy Policy', url: '/privacy' },
+                  { name: 'Refund Policy', url: '/refund' },
+                ].map((item) => (
+                  <li key={item.name}><a href={item.url} className="text-slate-600 hover:text-cyan-600 transition-colors text-sm">{item.name}</a></li>
                 ))}
               </ul>
             </div>

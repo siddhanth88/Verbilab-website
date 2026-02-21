@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build
+build/
+dist/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flutter (mobile)
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+*.iml

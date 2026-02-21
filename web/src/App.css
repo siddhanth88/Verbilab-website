@@ -1,14 +1,87 @@
-/* Additional custom styles */
-.text-gradient {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(to right, #06B6D4, #3B82F6);
+/* ============================================
+   VERBILAB — PREMIUM REDESIGN v2
+   Direction: Futuristic SaaS / Maximalist Glass
+   ============================================ */
+
+:root {
+  --bg: #05050A;
+  --violet: #7C3AED;
+  --violet-bright: #8B5CF6;
+  --pink: #EC4899;
+  --cyan: #06B6D4;
+  --lime: #84CC16;
+  --text: #F8FAFC;
+  --text-muted: #94A3B8;
+  --text-dim: #475569;
 }
 
-.bg-grid {
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--violet), var(--pink)); border-radius: 99px; }
+::selection { background: rgba(124,58,237,0.3); color: #fff; }
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.gradient-text {
+  background: linear-gradient(135deg, #A78BFA, #F472B6, #34D399, #A78BFA);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes float-orb {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-40px) scale(1.08); }
+}
+@keyframes float-orb2 {
+  0%, 100% { transform: translate(0,0); }
+  33% { transform: translate(20px,-25px); }
+  66% { transform: translate(-15px,10px); }
+}
+.orb-float { animation: float-orb 9s ease-in-out infinite; }
+.orb-float2 { animation: float-orb2 13s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px currentColor, 0 0 20px currentColor; }
+  50% { opacity: 0.4; box-shadow: 0 0 4px currentColor; }
+}
+
+.glass {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+}
+.glass:hover {
+  background: rgba(124,58,237,0.08);
+  border-color: rgba(124,58,237,0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(124,58,237,0.15);
+}
+
+.btn-glow {
+  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+  box-shadow: 0 0 30px rgba(124,58,237,0.5), 0 0 80px rgba(236,72,153,0.2), inset 0 1px 0 rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 50px rgba(124,58,237,0.7), 0 0 120px rgba(236,72,153,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+  transform: translateY(-3px) scale(1.02);
+}
+
+.mesh-grid {
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(124,58,237,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124,58,237,0.07) 1px, transparent 1px);
+  background-size: 50px 50px;
 }

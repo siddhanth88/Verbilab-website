@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const steps = [
   { num: '01', title: 'Select use-case', desc: 'Choose from a wide range of ready-to-use content templates designed for all your business and creative needs.' },
   { num: '02', title: 'Add Your Context', desc: 'Help the AI understand your requirements by entering key details. The more relevant the input, the better the output.' },
-  { num: '03', title: 'Get High-Quality Results', desc: "Receive plagiarism-free, tailored content that's ready to publish across any platform—fast, easy, and reliable." },
+  { num: '03', title: 'Get High-Quality Results', desc: 'Receive plagiarism-free, tailored content that\'s ready to publish across any platform—fast, easy, and reliable.' },
 ];
 
 export default function HowItWorks() {

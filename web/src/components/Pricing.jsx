@@ -20,7 +20,7 @@ export default function Pricing() {
         </motion.h2>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           className="text-xl text-slate-600 text-center mb-8 max-w-2xl mx-auto">
-          Our plans are simple and transparent—you&apos;re only charged based on your monthly usage
+          Our plans are simple and transparent—you're only charged based on your monthly usage
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}

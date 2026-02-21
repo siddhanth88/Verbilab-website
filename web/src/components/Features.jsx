@@ -44,7 +44,8 @@ export default function Features() {
               </div>
               <h3 className="font-semibold text-slate-800 group-hover:text-slate-900">{feature.title}</h3>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
